@@ -1,0 +1,24 @@
+{
+  "name": "js-todo-app",
+  "version": "1.0.0",
+  "description": "Simple Todo Application using Node and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iq18/node-todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iq18/node-todo/issues"
+  },
+  "homepage": "https://github.com/iq18/node-todo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
