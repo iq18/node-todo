@@ -1,1 +1,1 @@
-##Simple Todo Application using Node, Express, MongoDB and Mongoose
+Simple Todo Application using Node, Express, MongoDB and Mongoose
