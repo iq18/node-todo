@@ -11,7 +11,7 @@ app.use(express.static('public'));
 const connectionString = `mongodb+srv://${env.mongoUser}:${env.mongoPass}@cluster0-gh5ky.mongodb.net/${env.dbName}?retryWrites=true&w=majority`;
 mongodb.connect(connectionString, {useNewUrlParser:true}, (err,client) => {
   db = client.db();
-  app.listen(process.env.port || port);
+  app.listen(process.env.PORT || port);
 });
 
 // automatically take asynchronous requests (axios from browser) + add to body object lives on req object
@@ -20,8 +20,7 @@ app.use(express.json())
 // automatically take submitted form data + add to body object lives on req object
 app.use(express.urlencoded({extended:false}));
 
-const port = 3000;
-const router = express.Router();
+let port = 3000;
 
 let passwordProtected = (req, res, next) => {
   res.set('WWW-Authenticate', 'Basic realm="Simple Todo App"');
